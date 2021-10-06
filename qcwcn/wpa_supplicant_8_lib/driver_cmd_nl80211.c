@@ -71,7 +71,7 @@ static int wpa_driver_cmd_set_tx_power(struct i802_bss *bss, char *cmd)
 		return -ENOBUFS;
 	}
 
-	ret = send_and_recv_msgs(drv, msg, NULL, NULL);
+	ret = send_and_recv_msgs(drv, msg, NULL, NULL, NULL, NULL);
 	if (!ret)
 		return 0;
 
